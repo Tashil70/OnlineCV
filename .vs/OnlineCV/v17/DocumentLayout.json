@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lab_services_student\\source\\repos\\OnlineCV\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA7F445-9AD1-43CB-A703-FC493F604AB7}|OnlineCV.csproj|c:\\users\\lab_services_student\\source\\repos\\onlinecv\\views\\cv\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BFA7F445-9AD1-43CB-A703-FC493F604AB7}|OnlineCV.csproj|solutionrelative:views\\cv\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA7F445-9AD1-43CB-A703-FC493F604AB7}|OnlineCV.csproj|c:\\users\\lab_services_student\\source\\repos\\onlinecv\\models\\cvmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFA7F445-9AD1-43CB-A703-FC493F604AB7}|OnlineCV.csproj|solutionrelative:models\\cvmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA7F445-9AD1-43CB-A703-FC493F604AB7}|OnlineCV.csproj|c:\\users\\lab_services_student\\source\\repos\\onlinecv\\controllers\\cvcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFA7F445-9AD1-43CB-A703-FC493F604AB7}|OnlineCV.csproj|solutionrelative:controllers\\cvcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFA7F445-9AD1-43CB-A703-FC493F604AB7}|OnlineCV.csproj|c:\\users\\lab_services_student\\source\\repos\\onlinecv\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFA7F445-9AD1-43CB-A703-FC493F604AB7}|OnlineCV.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\OnlineCV\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\OnlineCV\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABQAAADAzMzMzMwrwBsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T11:26:27.306Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\OnlineCV\\Views\\Cv\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cv\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\OnlineCV\\Views\\Cv\\Index.cshtml",
+              "RelativeToolTip": "Views\\Cv\\Index.cshtml",
+              "ViewState": "AgIAALQAAAAAAAAAAAAowMkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-01T11:25:58.056Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CvController.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\OnlineCV\\Controllers\\CvController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CvController.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\OnlineCV\\Controllers\\CvController.cs",
+              "RelativeToolTip": "Controllers\\CvController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T11:24:38.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CvModel.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\source\\repos\\OnlineCV\\Models\\CvModel.cs",
+              "RelativeDocumentMoniker": "Models\\CvModel.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\source\\repos\\OnlineCV\\Models\\CvModel.cs",
+              "RelativeToolTip": "Models\\CvModel.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA7wDIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T11:22:50.477Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+﻿@model OnlineCV.Models.CvModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@Model.Name - CV</title>
+
+    <!-- Google Font: Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 50px;
+            background-color: #1E1E1E;
+            color: #E0E0E0;
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #2E2E2E;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .header {
+            background: linear-gradient(135deg, #5C0E0E, #8B0000);
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+        }
+
+            .header h1 {
+                color: #E0E0E0;
+                font-weight: 700;
+                margin: 0;
+                font-size: 28px;
+            }
+
+        .section {
+            background: #3B3B3B;
+            padding: 25px;
+            margin-top: 35px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #E0E0E0;
+            font-weight: 500;
+            border-bottom: 3px solid #8B0000;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        p {
+            margin: 5px 0;
+            line-height: 1.7;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+            ul li {
+                background: #A52A2A;
+                padding: 8px;
+                margin-bottom: 10px;
+                border-radius: 6px;
+                font-size: 13px;
+                color: #E0E0E0;
+            }
+
+        a {
+            text-decoration: none;
+            color: #8B0000;
+            font-weight: 500;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+        /* Adjustments for the Projects section */
+        .projects-section {
+            margin-top: 20px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+        }
+
+            .project h3 {
+                font-size: 16px;
+                margin-top: 0;
+            }
+
+            .project p {
+                font-size: 14px;
+                margin-top: 5px;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>@Model.Name</h1>
+        </div>
+
+        <!-- Personal Details Section -->
+        <div class="section">
+            <p><strong>Address:</strong> @Model.Address</p>
+            <p><strong>SA ID:</strong> @Model.IDNumber | <strong>DOB:</strong> @Model.DOB</p>
+            <p><strong>Contact:</strong> @Model.ContactInfo</p>
+            <p><strong>Email:</strong> <a href="mailto:@Model.Email">@Model.Email</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tashil-koseelan-3651b4288" target="_blank">Tashil Koseelan</a></p>
+        </div>
+
+        <!-- Summary Section -->
+        <div class="section">
+            <h2>Summary</h2>
+            <p>@Model.Summary</p>
+        </div>
+
+        <!-- Education Section -->
+        <div class="section">
+            <h2>Education</h2>
+            @foreach (var edu in Model.Education)
+            {
+                <p><strong>@edu.Degree</strong> - @edu.Institution (@edu.YearCompleted)</p>
+                <p>@edu.Description</p>
+            }
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section projects-section">
+            <h2>Projects</h2>
+            <p><strong>GitHub Profile:</strong> <a href="https://github.com/Tashil70" target="_blank">github.com/Tashil70</a></p>
+
+            <div class="project">
+                <h3>Contract Monthly Claim System</h3>
+                <p>Developed a Contract Monthly Claim System (CMCS) using ASP.NET MVC & Entity Framework. The system simplifies the process of submitting and approving monthly claims for Independent Contractor lecturers, including claims validation and document uploading.</p>
+                <p><strong>Technologies Used:</strong> ASP.NET MVC, Entity Framework, C#, SQL</p>
+            </div>
+
+            <div class="project">
+                <h3>E-commerce Store with Azure Integration</h3>
+                <p>Built an Azure-integrated e-commerce store as part of a university project. The store uses Azure services for storage and management of products, customer data, and orders, offering a seamless shopping experience with cloud-based scalability.</p>
+                <p><strong>Technologies Used:</strong> Azure, ASP.NET MVC, SQL, C#</p>
+            </div>
+
+            <div class="project">
+                <h3>Content-Based Recommendation System</h3>
+                <p>Created a content-based recommendation system using Node.js and React. The system recommends products or content based on user preferences and previous behavior, providing a personalized user experience.</p>
+                <p><strong>Technologies Used:</strong> Node.js, React, JavaScript, REST API</p>
+            </div>
+        </div>
+
+        <!-- Work Experience Section -->
+        <div class="section">
+            <h2>Work Experience</h2>
+            @foreach (var work in Model.WorkExperience)
+            {
+                <p><strong>@work.Role</strong> - @work.Company (@work.Duration)</p>
+                <p>@work.Description</p>
+            }
+        </div>
+
+        <!-- Technical Skills Section -->
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <ul>
+                @foreach (var skill in Model.Skills)
+                {
+                    <li>@skill</li>
+                }
+            </ul>
+        </div>
+
+        <!-- References Section -->
+        <div class="section">
+            <h2>References</h2>
+            @foreach (var reference in Model.References)
+            {
+                <p><strong>@reference.Name</strong> - @reference.Position</p>
+                <p>Contact: @reference.Contact</p>
+            }
+        </div>
+
+    </div>
+</body>
+</html>
